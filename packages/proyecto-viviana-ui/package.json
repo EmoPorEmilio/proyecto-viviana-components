@@ -2,7 +2,23 @@
   "name": "proyecto-viviana-ui",
   "version": "0.0.3",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./src/index.ts",
+    "./Alert": "./src/Alert.tsx",
+    "./Avatar": "./src/Avatar.tsx",
+    "./Badge": "./src/Badge.tsx",
+    "./Button": "./src/Button.tsx",
+    "./CalendarCard": "./src/CalendarCard.tsx",
+    "./CardCarousel": "./src/CardCarousel.tsx",
+    "./CardEvent": "./src/CardEvent.tsx",
+    "./Chip": "./src/Chip.tsx",
+    "./Conversation": "./src/Conversation.tsx",
+    "./Dialog": "./src/Dialog.tsx",
+    "./Header": "./src/Header.tsx",
+    "./Icon": "./src/Icon.tsx",
+    "./LateralNav": "./src/LateralNav.tsx",
+    "./ProfileHead": "./src/ProfileHead.tsx",
+    "./Switch": "./src/Switch.tsx",
+    "./TimelineItem": "./src/TimelineItem.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
