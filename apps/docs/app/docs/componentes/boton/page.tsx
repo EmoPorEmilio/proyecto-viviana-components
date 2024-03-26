@@ -1,18 +1,22 @@
 'use client';
-import Dialog from 'proyecto-viviana-ui/Dialog';
-import ProfileHead from 'proyecto-viviana-ui/ProfileHead';
-import Badge from 'proyecto-viviana-ui/Badge';
-import { sen } from '@/fonts';
-import { Button, ButtonType } from 'proyecto-viviana-ui/Button';
-import Switch from 'proyecto-viviana-ui/Switch';
-import { Icon } from 'proyecto-viviana-ui/Icon';
-import { IconType } from 'proyecto-viviana-ui/types';
-import { Alert, AlertType } from 'proyecto-viviana-ui/Alert';
-import TimelineItem from 'proyecto-viviana-ui/TimelineItem';
+import { sen } from '../../../../fonts';
+import {
+  Dialog,
+  ProfileHead,
+  Badge,
+  Button,
+  ButtonType,
+  Switch,
+  //Icon,
+  IconType,
+  //Alert,
+  //AlertType,
+  TimelineItem,
+  CardCarousel,
+  CalendarCard,
+  Conversation,
+} from 'proyecto-viviana-ui';
 import { MdMenu } from 'react-icons/md';
-import CardCarousel from 'proyecto-viviana-ui/CardCarousel';
-import CalendarCard from 'proyecto-viviana-ui/CalendarCard';
-import Conversation from 'proyecto-viviana-ui/Conversation';
 
 export const runtime = 'edge';
 

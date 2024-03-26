@@ -1,4 +1,4 @@
-import { Jost, Sen } from '@next/font/google';
+import { Jost, Sen } from 'next/font/google';
 
 export const sen = Sen({
   subsets: ['latin'],

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { jost } from '@/fonts';
+import { jost } from '../fonts';
 
 export const metadata: Metadata = {
   title: 'Docs Proyecto Viviana',

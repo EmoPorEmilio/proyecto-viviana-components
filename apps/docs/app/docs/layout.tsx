@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import '../globals.css';
-import { jost } from '@/fonts';
-import Header from 'proyecto-viviana-ui/Header';
-import LateralNav from 'proyecto-viviana-ui/LateralNav';
+import { jost } from '../../fonts';
+import { LateralNav, Header } from 'proyecto-viviana-ui';
 
 export const metadata: Metadata = {
   title: 'Docs Proyecto Viviana',
