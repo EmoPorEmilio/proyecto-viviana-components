@@ -21,9 +21,7 @@
     "./TimelineItem": "./src/TimelineItem"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "dev": "npm run build -- --watch"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "devDependencies": {
     "@types/eslint": "^8.56.5",
@@ -35,6 +33,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@next/font": "^14.1.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.1",
