@@ -1,16 +1,4 @@
-export * from './Alert';
-export * from './Avatar';
-export * from './Badge';
-export * from './Button';
-export * from './CalendarCard';
-export * from './CardCarousel';
-export * from './CardEvent';
-export * from './Chip';
-export * from './Conversation';
-export * from './Dialog';
-export * from './Header';
-export * from './Icon';
-export * from './LateralNav';
-export * from './ProfileHead';
-export * from './Switch';
-export * from './TimelineItem';
+import LateralNav from './Header/LateralNav';
+import Header from './Header';
+
+export { LateralNav, Header };
