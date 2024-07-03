@@ -1,19 +1,19 @@
-# {{proyecto-viviana-ui}}
+# proyecto-viviana-ui
 
 [![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
 
-{{Solid.js Component library for Proyecto Viviana}}
+Solid.js Component library for Proyecto Viviana
 
 ## Quick start
 
 Install it:
 
 ```bash
-npm i {{name_of_lib}}
+npm i proyecto-viviana-ui
 # or
-yarn add {{name_of_lib}}
+yarn add proyecto-viviana-ui
 # or
-pnpm add {{name_of_lib}}
+pnpm add proyecto-viviana-ui
 ```
 
 Use it:
