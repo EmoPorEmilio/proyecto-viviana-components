@@ -1,6 +1,6 @@
 import { JSX } from 'solid-js'
 
-export enum AlertType {
+export enum ButtonType {
   Primary = 'primary',
   Secondary = 'secondary',
   Tertiary = 'tertiary',
@@ -16,30 +16,32 @@ export enum AlertType {
 
 interface ButtonProps {
   onClick: Function
-  type: AlertType
+  type: ButtonType
   children: JSX.Element
 }
 
-const Alert = ({ onClick, type, children }: ButtonProps) => {
-  const alertDynamicClass = () => {
+const Button = ({ onClick, type, children }: ButtonProps) => {
+  const buttonDynamicClass = () => {
     switch (type) {
-      case AlertType.Primary:
-        return 'font-regular bg-primary-700 text-primary-200 border-solid border border-primary-500'
-      case AlertType.Secondary:
+      case ButtonType.Primary:
+        return 'font-medium bg-primary-700 text-primary-200 shadow-primary-chip'
+      case ButtonType.Secondary:
         return 'font-regular  bg-bg-400 text-primary-500 border-solid border border-primary-500'
-      case AlertType.Danger:
+      case ButtonType.Danger:
         return 'font-regular  bg-danger-600 text-danger-100 border-solid border border-danger-400'
-      case AlertType.Success:
+      case ButtonType.Success:
         return 'font-regular  bg-success-600 text-success-100 border-solid border border-success-400'
+      case ButtonType.Link:
+        return 'font-regular text-danger-500 text-accent-200'
     }
   }
   return (
     <button
-      class={`flex  items-center w-[600px] h-[50px] ${alertDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+      class={`whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
     >
       {children}
     </button>
   )
 }
 
-export default Alert
+export default Button
