@@ -20,7 +20,7 @@ interface ButtonProps {
   children: JSX.Element
 }
 
-const Button = ({ onClick, type, children }: ButtonProps) => {
+export const Button = ({ onClick, type, children }: ButtonProps) => {
   const buttonDynamicClass = () => {
     switch (type) {
       case ButtonType.Primary:
@@ -43,5 +43,3 @@ const Button = ({ onClick, type, children }: ButtonProps) => {
     </button>
   )
 }
-
-export default Button
