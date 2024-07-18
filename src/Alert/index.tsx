@@ -20,7 +20,7 @@ interface ButtonProps {
   children: JSX.Element
 }
 
-const Alert = ({ onClick, type, children }: ButtonProps) => {
+export const Alert = ({ onClick, type, children }: ButtonProps) => {
   const alertDynamicClass = () => {
     switch (type) {
       case AlertType.Primary:
@@ -41,5 +41,3 @@ const Alert = ({ onClick, type, children }: ButtonProps) => {
     </button>
   )
 }
-
-export default Alert
