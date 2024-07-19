@@ -3,5 +3,5 @@ import Header from './Header'
 import {Alert, AlertType} from './Alert'
 import {Button, ButtonType} from './Button';
 import Chip from './Chip'
-
-export { LateralNav, Header, Alert, AlertType, Button, ButtonType, Chip }
+import TailwindStyles from '../tailwindcss.config'
+export { LateralNav, Header, Alert, AlertType, Button, ButtonType, Chip, TailwindStyles }
