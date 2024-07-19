@@ -1,5 +1,8 @@
+
+import plugin from 'tailwindcss/plugin';
+
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
@@ -45,3 +48,8 @@ export default {
   },
   plugins: [],
 }
+
+const export_plugin = plugin(() => {
+}, config);
+
+export default export_plugin;

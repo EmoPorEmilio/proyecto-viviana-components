@@ -1,6 +1,6 @@
 {
   "name": "proyecto-viviana-ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Solid.js Component library for Proyecto Viviana",
   "license": "MIT",
   "author": "EmoPorEmilio",
@@ -85,5 +85,8 @@
   "engines": {
     "node": ">=18",
     "pnpm": ">=9.0.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.6"
   }
 }
