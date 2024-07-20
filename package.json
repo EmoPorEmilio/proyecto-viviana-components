@@ -19,7 +19,7 @@
   "private": false,
   "sideEffects": false,
   "type": "module",
-  "main": "./dist/index/index.js",
+  "main": "./dist/index/index.cjs",
   "module": "./dist/index/index.js",
   "types": "./dist/index/index.d.ts",
   "browser": {},
@@ -33,11 +33,19 @@
         "import": {
           "types": "./dist/index/index.d.ts",
           "default": "./dist/index/dev.js"
+        },
+        "require": {
+          "types": "./dist/index/index.d.cts",
+          "default": "./dist/index/dev.cjs"
         }
       },
       "import": {
         "types": "./dist/index/index.d.ts",
         "default": "./dist/index/index.js"
+      },
+      "require": {
+        "types": "./dist/index/index.d.cts",
+        "default": "./dist/index/index.cjs"
       }
     },
     "./tailwindcss": {
@@ -45,11 +53,19 @@
         "import": {
           "types": "./dist/tailwindcss/index.d.ts",
           "default": "./dist/tailwindcss/dev.js"
+        },
+        "require": {
+          "types": "./dist/tailwindcss/index.d.cts",
+          "default": "./dist/tailwindcss/dev.cjs"
         }
       },
       "import": {
         "types": "./dist/tailwindcss/index.d.ts",
         "default": "./dist/tailwindcss/index.js"
+      },
+      "require": {
+        "types": "./dist/tailwindcss/index.d.cts",
+        "default": "./dist/tailwindcss/index.cjs"
       }
     }
   },
