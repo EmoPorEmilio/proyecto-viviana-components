@@ -7,10 +7,15 @@ const preset_options: preset.PresetOptions = {
     // default entry (index)
     {
       // entries with '.tsx' extension will have `solid` export condition generated
-      entry: 'src/index.tsx',
+      entry: 'src/components/index.tsx',
       // will generate a separate development entry
       dev_entry: true,
     },
+    {
+      name: 'tailwindcss',
+      entry: 'src/tailwindcss/index.ts',
+      dev_entry: true,
+    }
   ],
   // Set to `true` to remove all `console.*` calls and `debugger` statements in prod builds
   drop_console: true,
