@@ -1,8 +1,17 @@
 const mainTheme = {
   extend: {
+    keyframes: {
+      wiggle: {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
+      },
+    },
+    animation: {
+      wiggle: 'wiggle 1s ease-in-out infinite',
+    },
     fontFamily: {
-      jost: 'var(--font-jost)',
-      sen: 'var(--font-sen)',
+      jost: ['Jost', 'sans-serif'],
+      sen: ['Sen', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',
@@ -31,12 +40,13 @@ const mainTheme = {
       'danger-600': '#9D5555',
     },
     dropShadow: {
-      logo: '3px 1px #DF5C9A',
+      logo: '2px 1px #DF5C9A',
       'title-primary': '0 4px #58748B',
-      'title-card': '0px 1px #DF5C9A',
+      'title-card': '0px 2px #4C6477',
     },
     boxShadow: {
       'primary-chip': '0px 1px #75ABC7',
+      card: '0px 2px 20px -10px #DF5C9A',
     },
   },
 }
