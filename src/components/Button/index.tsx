@@ -15,12 +15,13 @@ export enum ButtonType {
 }
 
 interface ButtonProps {
-  onClick: Function
+  onClick?: Function
   type: ButtonType
+  label: string
   children: JSX.Element
 }
 
-export const Button = ({ onClick, type, children }: ButtonProps) => {
+export const Button = ({ onClick, type, children, label }: ButtonProps) => {
   const buttonDynamicClass = () => {
     switch (type) {
       case ButtonType.Primary:
@@ -37,9 +38,9 @@ export const Button = ({ onClick, type, children }: ButtonProps) => {
   }
   return (
     <button
-      class={`whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
+      class={`text-jost whitespace-nowrap	 tracking-wider ${buttonDynamicClass()} w-auto rounded-lg px-4 py-2 `}
     >
-      {children}
+      <span>{label}</span>
     </button>
   )
 }
