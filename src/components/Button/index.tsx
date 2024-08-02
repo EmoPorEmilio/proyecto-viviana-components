@@ -1,5 +1,5 @@
 import { A } from '@solidjs/router'
-import { JSX, Show } from 'solid-js'
+import { Show } from 'solid-js'
 
 export enum ButtonType {
   Primary = 'primary',

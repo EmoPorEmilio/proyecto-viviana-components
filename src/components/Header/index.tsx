@@ -1,20 +1,19 @@
-//import { Icon } from '@/components/Icon';
-import { VsMenu } from 'solid-icons/vs';
-import { A } from '@solidjs/router';
-
-const Header = () => (
-  <nav class='flex items-center bg-bg-400 h-[70px] border-bottom border-solid border-b-4 border-accent-500'>
-    <span class='md:pl-3 pl-3 text-[34px] subpixel-antialiased font-light text-primary-700 shadow-none flex items-center'>
-      Curso&nbsp;
-      <span class='z-10 text-primary-500  font-black drop-shadow-logo'>
-        SOLIDSTART
-      </span>
+interface Props {
+  first_word: string
+  second_word: string
+  children?: any
+}
+const Header = ({ first_word, second_word, children }: Props) => (
+  <nav class="flex items-center bg-bg-400 h-[70px] border-bottom border-solid border-b-4 border-accent-500 font-jost uppercase subpixel-antialiased">
+    <span class="md:pl-3 pl-3 text-[34px] font-light text-primary-800 shadow-none">
+      {first_word}
     </span>
 
-    <A href='/menu' class='md:hidden flex flex-1 justify-end md:pr-8 pr-3'>
-      <VsMenu size='40px' color='#75ABC7' />
-    </A>
+    <div class="text-primary-500 font-black drop-shadow-logo drop-shadow-logo-white-left drop-shadow-logo-white-top drop-shadow-logo-white-bot drop-shadow-logo-white-right">
+      <span class="z-1 text-[35px]">{second_word}</span>
+    </div>
+    {children}
   </nav>
-);
+)
 
-export default Header;
+export default Header

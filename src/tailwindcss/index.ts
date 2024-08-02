@@ -40,7 +40,11 @@ const mainTheme = {
     'danger-600': '#9D5555',
   },
   dropShadow: {
-    logo: '2px 1px #DF5C9A',
+    logo: '6px 1px #DF5C9A',
+    'logo-white-left': '-1px 0px #FFFFFF',
+    'logo-white-right': '1px 0px #FFFFFF',
+    'logo-white-top': '0px -1px #FFFFFF',
+    'logo-white-bot': '0px -2px #FFFFFF',
     'title-primary': '0 4px #58748B',
     'title-card': '0px 2px #4C6477',
   },
